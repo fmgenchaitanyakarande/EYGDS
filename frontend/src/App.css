@@ -1,0 +1,65 @@
+/* =============== Smooth Transitions =============== */
+* {
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* =============== Global Styling =============== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #121212;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* =============== Buttons & Links =============== */
+button, .btn {
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(255, 165, 0, 0.5);
+}
+
+/* =============== Smooth Page Transitions =============== */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 400ms;
+}
+
+/* =============== Footer =============== */
+footer {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  color: #ffdd57;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #ff4500;
+  text-decoration: underline;
+}
